@@ -1,4 +1,4 @@
-import HeroImage from './Home/santa.svg'
+import HeroImage from './Home/Santa.svg'
 
 import Logo from './Header/head.svg'
 import Bulb from './Header/bulb.svg'
