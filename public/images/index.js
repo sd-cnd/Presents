@@ -1,6 +1,6 @@
-import HeroImage from './Home/home.svg'
+import HeroImage from './Home/santa.svg'
 
-import Logo from './Header/Logo.svg'
+import Logo from './Header/head.svg'
 import Bulb from './Header/bulb.svg'
 
 import CelebrateSectionImage from './Celebrate/celebrate.svg'
@@ -20,7 +20,7 @@ import NewArrivalsImage2 from './NewArrivals/new2.svg'
 import NewArrivalsImage3 from './NewArrivals/new3.svg'
 import NewArrivalsImage4 from './NewArrivals/new4.svg'
 
-import MessageSectionImage from './Message/letter.svg'
+import MessageSectionImage from './Message/lett.png'
 
 import FooterGreenBulb from './Footer/greenBulb.svg'
 import FooterRedBulb from './Footer/redBulb.svg'

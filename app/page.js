@@ -5,6 +5,7 @@ import CelebrateSection from "./layout/CelebrateSection"
 import GiftSection from "./layout/GiftSection"
 import NewGiftSection from "./layout/NewGiftSection"
 import MessageSection from "./layout/MessageSection"
+import Login from "./layout/Login"
 import Footer from "./layout/Footer"
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <GiftSection/>
       <NewGiftSection/>
       <MessageSection/>
+      <Login/>
       <Footer/>
     </main>
   )

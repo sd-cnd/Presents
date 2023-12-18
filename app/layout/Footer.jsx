@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className='flex mb-6'>
             <Image src={Logo} alt='logo' className='w-[24px] h-[24px]'/>
-            <p className='xs:text-[16px] text-[15px] font-normal text-title-color dark:text-title-color-dark'>Christmas</p>
+            <p className='xs:text-[16px] text-[15px] font-normal text-title-color dark:text-title-color-dark'>{'\u00A0'}Presents</p>
             </div>
             <div>
               <p className='text-text-color text-[13px] xs:text-[14px] xs:w-[145px] w-[135px] dark:text-text-color-dark'>This Christmas give a lot of love</p>
@@ -66,8 +66,8 @@ const Footer = () => {
         <div className='absolute xs:ml-[90px] xs:mt-[-80px] ml-[180px] mt-[150px]'>
           <Image  src={FooterGreenBulb} alt='GreenBulb' className='w-[120px] h-[132px]'/>
         </div>
-        <div className='absolute xs:ml-[165px] xs:mt-[500px] ml-[400px] mt-[450px]'>
-          <Image src={FooterRedBulb} alt='RedBulb' className='min-w-[120px] h-[142px]'/>
+        <div className='absolute xs:ml-[165px] xs:mt-[500px] ml-[400px] mt-[450px] '>
+          <Image src={FooterRedBulb} alt='RedBulb' className='min-w-[120px] h-[142px] xs:mr-3'/>
         </div>
         </div>
 

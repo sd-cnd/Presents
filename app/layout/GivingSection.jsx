@@ -30,8 +30,8 @@ const GivingSectionData = [
 
 const GivingSection = () => {
   return (
-    <div>
-      <div className='flex justify-center mt-24 flex-col items-center'>
+    <div className='mb-10'>
+      <div className='flex justify-center mt-24 flex-col items-center '>
         <div>
           <p className='text-[24px] w-[200px] font-semibold text-center text-title-color dark:text-text-color-dark'>
           Start Giving This Christmas
@@ -39,9 +39,9 @@ const GivingSection = () => {
         </div>
         <div className='grid lg:mt-16 mt-8 grid-cols-2 lg:grid-cols-3'>
           {GivingSectionData.map((Giving_Section_Data) => (
-            <div key={Giving_Section_Data.id} className='text-center items-center flex justify-center flex-col lg:mx-12 md:mx-8 mx-5 cursor-pointer'>
+            <div key={Giving_Section_Data.id} className='text-center items-center flex justify-center flex-col lg:mx-12 md:mx-8 mx-5 cursor-pointer shadow-lg rounded-lg p-2 m-1'>
             <div>
-              <Image src={Giving_Section_Data.image} alt={Giving_Section_Data.altText} className='xs:w-[120px] xs:h-[120px] w-[100px] h-[100px] m-5'/>
+              <Image src={Giving_Section_Data.image} alt={Giving_Section_Data.altText} className='xs:w-[120px] xs:h-[120px] w-[100px] h-[100px] m-5 '/>
             </div>
             <div>
               <p className='text-[16px] xs:text-[16px] font-semibold dark:text-title-color-dark text-title-color'>{Giving_Section_Data.title}</p>

@@ -19,7 +19,7 @@ const HeroSection = () => {
             <p className='text-[13px] sm:text-[15px] w-[280px] sm:w-[380px] font-normal text-text-color mt-5 dark:text-text-color-dark'>Christmas and a new year is about to begin, all good wishes and successes.</p>
           </div>
           <div className='flex justify-center items-center lg:justify-start'>
-            <div className='rounded-[64px] w-fit h-auto bg-first-color px-12 py-5 text-[15px] xs:text-[16px] font-medium text-white mt-10 cursor-pointer'><Button className="bg-red-500">Get Started</Button></div>
+            <div className='rounded-[64px] w-fit h-auto bg-first-color px-12 py-5 text-[15px] xs:text-[16px] font-medium text-white mt-10 cursor-pointer'><Button className="bg-red-500 text-white hover:bg-slate-50 hover:text-black">Get Started</Button></div>
           </div>
         </div>
       </div>

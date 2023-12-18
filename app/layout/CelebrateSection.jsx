@@ -2,6 +2,8 @@
 import React from 'react'
 import {CelebrateSectionImage} from '../../public/images/index'
 import Image from 'next/image'
+import { Button } from '../../components/ui/button'
+import { Link } from "react-scroll"
 
 const CelebrateSection = () => {
   return (
@@ -15,7 +17,8 @@ const CelebrateSection = () => {
         </div>
         <div className='flex justify-center items-center lg:justify-start'>
           <div className='rounded-[64px] w-fit h-auto bg-first-color px-12 py-4 text-[15px] xs:text-[16px] font-medium text-white mt-10 cursor-pointer'>
-          Send Good Wishes
+          <Button className="bg-red-500 text-white hover:bg-slate-50 hover:text-black" asChild>
+            <Link to="message">Send Good Wishes</Link></Button>
           </div>
         </div>
       </div>

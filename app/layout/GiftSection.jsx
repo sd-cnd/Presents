@@ -55,18 +55,18 @@ const GiftSection = () => {
   }
 
   return (
-    <div id='gifts' className='flex justify-center mt-24 flex-col items-center mb-5'>
+    <div id='gifts' className='flex justify-center mt-24 flex-col items-center mb-10'>
       <div>
-        <p className='text-[24px] w-[200px] font-semibold text-center text-title-color dark:text-title-color-dark'>Share A Gift</p>
+        <p className='text-[24px] w-[200px] font-semibold text-center text-title-color dark:text-title-color-dark'>Share A Gift 🎁</p>
       </div>
-      <div className='grid lg:mt-8 mt-4 grid-cols-2 lg:grid-cols-3'>
+      <div className='grid lg:mt-8 mt-4 grid-cols-2 lg:grid-cols-3 border-red-500'>
         {GiftSectionData.map((Gift_Section_Data,index) => (
 
           <div key={Gift_Section_Data.id} className='items-center flex flex-col xs:mx-4 xs:my-4 my-5 mx-5 xs:w-[200px] xs:h-[247px] w-[144px] h-[192px] rounded-xl shadow-lg bg-container-color dark:bg-container-color-dark'>
           <div className='mt-4'>
             <div onClick={() => handleClick(index)}>
               {fav[index] ? 
-                (<BsHeartFill className='w-[20px] h-[20px] text-first-color float-right absolute xs:ml-[60px] xs:mt-[5px] ml-[40px] mt-[1px]'/>)
+                (<BsHeartFill className='w-[20px] h-[20px] text-red-500 float-right absolute xs:ml-[60px] xs:mt-[5px] ml-[40px] mt-[1px]'/>)
                 :
                 (<BsHeart className='w-[20px] h-[20px] text-first-color float-right absolute xs:ml-[60px] xs:mt-[5px] ml-[40px] mt-[1px]'/>)
               }

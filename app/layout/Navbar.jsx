@@ -39,7 +39,7 @@ export function SheetDemo({ isOpen, onClose, links, onLinkClick }) {
     <Sheet open={isOpen} onClose={onClose}>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Navigation</SheetTitle>
+          <SheetTitle>Presents</SheetTitle>
         </SheetHeader>
         <div className="grid gap-4 py-4">
           <div className="flex flex-col items-center">
@@ -60,7 +60,7 @@ export function SheetDemo({ isOpen, onClose, links, onLinkClick }) {
 }
 
 
-const Navbar = () => {
+export function Navbar () {
   const [sideNavOpen, setSideNavOpen] = useState(false);
   const { setTheme } = useTheme();
 
@@ -78,19 +78,22 @@ const Navbar = () => {
 
   const handleLinkClick = (link) => {
     setSideNavOpen(false); // Close the side nav
-    const element = document.getElementById(link.to);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if(link && link.to){
+      const element = document.getElementById(link.to);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   return (
+    <div>
     <div className="w-full top-0 dark:bg-body-color-dark bg-body-color bg-opacity-75">
       <div className="h-[30px] my-5">
         <div className={`flex justify-between lg:mx-24 ${sideNavOpen ? 'mx-0' : 'mx-8'}`}>
           <div className="flex cursor-pointer">
             <Image src={Logo} alt="Logo" className="w-[24px] h-[24px]" />
-            <p className="md:text-[20px] text-[20px] font-normal text-title-color dark:text-title-color-dark">Presents</p>
+            <p className="md:text-[20px] text-[20px] text-title-color dark:text-title-color-dark">{'\u00A0'}Presents</p>
           </div>
 
           <div className="flex">
@@ -112,7 +115,7 @@ const Navbar = () => {
             </div>
 
             <div className='cursor-pointer visible md:invisible my-auto' onClick={handleBsGridClick}>
-              <Button variant="outline" className="mr-2 p-3"><BsGrid className='w-[20px] h-[20px]' /></Button>
+              <Button variant="outline" className="mr-1 p-3"><BsGrid className='w-[20px] h-[20px]' /></Button>
             </div>
           </div>
 
@@ -168,6 +171,7 @@ const Navbar = () => {
           onLinkClick={handleLinkClick}
         />
       )}
+    </div>
     </div>
   );
 };

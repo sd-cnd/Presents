@@ -29,9 +29,9 @@ const SingleCard = (props) => {
                 <div className='float-right mt-[-3px]'>
                     <div className='w-[28px] h-[28px] bg-first-color flex justify-center items-center rounded-br-xl cursor-pointer' onClick={handleLikeClick}>
                         {isLiked ?
-                            (<BsHeartFill className='w-[20px] h-[20px] text-white'/>) 
+                            (<BsHeartFill className='w-[20px] h-[20px] text-red-500'/>) 
                             : 
-                            (<BsHeart className='w-[20px] h-[20px] text-white'/>)
+                            (<BsHeart className='w-[20px] h-[20px] text-while'/>)
                         }
                     </div>
                 </div>
